@@ -63,6 +63,7 @@ app.get('/about',(req,res)=>{
 	});//allow you to render any template
 });
 
+//bad - send back json with errorMessage
 app.get('/bad',(req,res)=>{
 	res.send({
 		error:'error while handling request' 
